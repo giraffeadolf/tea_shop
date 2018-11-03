@@ -1,0 +1,135 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: #D7EC6F;
+}
+
+.wrapper {
+    display: table;
+    height: 100%;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: #FFF7A3;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-family: Copperplate Gothic;
+    font-size: 4em;
+    color: #97AF25;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-family: Copperplate Gothic;
+    font-size: 2em;
+    color: #97AF25;
+}
+
+header p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #97AF25;
+}
+
+nav {
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    font-family: Arial;
+    background-color: #FFF7A3;
+}
+
+.menu:hover {
+    background-color: #97AF25;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: Copperplate Gothic;
+    color: #97AF25;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    width: 30%;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.menu:hover a {
+    color: #FFF7A3;
+}
+
+/* main block */
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 10px 10px 0 10px;
+    padding: 5px;
+    background-color: #FFFAC8;
+}
+
+.main p {
+    color: #97AF25;
+    font-size: 1.2em;
+}
+
+.news {
+    padding: 0 5px 5px 5px;
+    margin: 15px 0 15px 0;
+}
+
+.stuff {
+    padding: 0 5px 5px 5px;
+    margin: 15px 0 15px 0;
+}
+
+.news:hover,
+.stuff:hover {
+    background-color: #F5E973;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 0 5px 5px 5px;
+    margin: 15px 0 15px 0;
+}
+
+/* bottom */
+
+footer {
+    padding: 5px;
+    text-align: right;
+    border-radius: 10px 10px 0 0;
+    background-color: #FFF7A3;
+}
