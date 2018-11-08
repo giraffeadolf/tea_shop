@@ -2,32 +2,33 @@ body,
 html {
     height: 100%;
     margin: 0;
-    background-color: #D7EC6F;
+    background-color: #FFF487;
 }
 
 .wrapper {
     display: table;
     height: 100%;
+    width: 100%;
 }
 
 /* header */
 
 header {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
     padding-top: 60px;
     padding-bottom: 10px;
-    border-radius: 10px;
-    background-color: #FFF7A3;
+    margin: auto;
+    font-family: 'Abril Fatface', cursive;
+    background-color: #FFF487;
 }
 
 header h1 {
     margin: 0;
     text-align: center;
-    font-family: Copperplate Gothic;
-    font-size: 4em;
-    color: #97AF25;
+    font-size: 6em;
+    font-weight: 100;
+    color: #778B16;
 }
 
 h2 {
@@ -41,13 +42,11 @@ h2 {
 header p {
     margin: 0;
     text-align: center;
-    font-size: 12px;
-    color: #97AF25;
+    font-size: 1.2em;
+    color: #778B16;
 }
 
-nav {
-    
-}
+nav {}
 
 .menu {
     display: flex;
@@ -57,17 +56,17 @@ nav {
     padding: 10px;
     margin: 0;
     font-family: Arial;
-    background-color: #FFF7A3;
+    background-color: #FFF487;
 }
 
 .menu:hover {
-    background-color: #97AF25;
+    background-color: #778B16;
 }
 
 .menu a {
     text-decoration: none;
     font-family: Copperplate Gothic;
-    color: #97AF25;
+    color: #778B16;
 }
 
 .menu a:hover {
@@ -82,7 +81,7 @@ nav {
 }
 
 .menu:hover a {
-    color: #FFF7A3;
+    color: #FFF487;
 }
 
 /* main block */
@@ -92,16 +91,19 @@ nav {
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    border: 1px solid #000;
+
+    border: 1px solid #97AF25;
     border-radius: 5px;
-    margin: 10px 10px 0 10px;
+    margin: 15px;
     padding: 5px;
     background-color: #FFFAC8;
 }
 
 .main p {
+    text-align: center;
     color: #97AF25;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond';
 }
 
 .news {
@@ -114,15 +116,23 @@ nav {
     margin: 15px 0 15px 0;
 }
 
-.news:hover,
-.stuff:hover {
-    background-color: #F5E973;
-    border-radius: 5px;
-}
-
 .content {
     padding: 0 5px 5px 5px;
     margin: 15px 0 15px 0;
+}
+
+/* contact page */
+
+.main-contact {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+iframe {
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
 }
 
 /* bottom */
@@ -131,5 +141,6 @@ footer {
     padding: 5px;
     text-align: right;
     border-radius: 10px 10px 0 0;
-    background-color: #FFF7A3;
+    background-color: #97AF25;
+    color: #FFF487;
 }
