@@ -167,6 +167,11 @@ nav {}
     font-size: 1em;
 }
 
+.main-contact .connect form button {
+    background-color: #97AF25;
+    color: #FFF487;
+}
+
 .main-contact .connect form input[class='name'] {
     width: 40%;
     padding-left: 10px;
@@ -184,9 +189,9 @@ nav {}
     font-family: Arial;
 }
 
-.main-contact .connect form div {
+.main-contact .connect form .buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .main-contact .connect form button {
@@ -201,9 +206,16 @@ iframe {
 /* bottom */
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     padding: 5px;
     text-align: right;
     border-radius: 10px 10px 0 0;
     background-color: #97AF25;
     color: #FFF487;
+}
+
+footer p {
+    margin: 0;
 }
