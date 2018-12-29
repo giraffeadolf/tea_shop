@@ -123,6 +123,17 @@ nav {}
     margin: 15px 0 15px 0;
 }
 
+/* catalog page */
+
+.product-box .product img {
+    width: 200px;
+    height: 200px;
+}
+
+.product-box .product .product-name {
+
+}
+
 /* contact page */
 
 .main-contact {
@@ -218,4 +229,46 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+.newslatter {
+    margin-left: 20px;
+}
+
+.newslatter h3 {
+    margin-bottom: 0;
+    font-family: 'Amatic SC';
+    font-size: 2em;
+    text-align: center;
+}
+
+.newslatter form {
+    margin-bottom: 20px;
+}
+
+.newslatter button[type="submit"],
+.newslatter input[type="text"] {
+    padding: 5px;
+    border: 1px solid #FFF487;
+    border-radius: 10px;
+
+    background-color: #97AF25;
+    color: #FFF487;
+    font-size: 1em;
+}
+
+.newslatter input[type="text"]::-webkit-input-placeholder{
+    color: #FFF487;
+}
+
+.newslatter button[type="submit"]:hover,
+.newslatter input[type="text"]:hover {
+    border: 1px solid #97AF25;
+
+    background-color: #FFF487;
+    color: #97AF25;
+}
+
+.newslatter input[type="text"]:hover::-webkit-input-placeholder{
+    color: #97AF25;
 }
