@@ -11,6 +11,10 @@ html {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* header */
 
 header {
@@ -125,13 +129,47 @@ nav {}
 
 /* catalog page */
 
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product-box {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 15px;
+    opacity: 0.5;
+}
+
+.product-box:hover {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .3s;
+}
+
+.product-box .product-info {
+    border-radius: 15px;
+    background-color: #97AF25;
+}
+
 .product-box .product img {
     width: 200px;
     height: 200px;
+    border-radius: 15px;
 }
 
-.product-box .product .product-name {
+.product-box .product .name {
+    margin: 0;
+    font-weight: 600;
+    color: #fff;
+}
 
+.product-box .product .price {
+    margin: 0;
+    font-family: Copperplate Gothic;
+    color: #fff;
 }
 
 /* contact page */
