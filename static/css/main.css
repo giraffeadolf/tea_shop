@@ -50,8 +50,6 @@ header p {
     color: #778B16;
 }
 
-nav {}
-
 .menu {
     display: flex;
     justify-content: space-around;
@@ -59,7 +57,6 @@ nav {}
     width: 100%;
     padding: 10px;
     margin: 0;
-    font-family: Arial;
     background-color: #FFF487;
 }
 
@@ -127,6 +124,74 @@ nav {}
 }
 
 /* catalog page */
+
+.main-catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.categories {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 15px;
+}
+
+.categories > li {
+    position: relative;
+    padding: 0 15px;
+    list-style: none;
+    white-space: nowrap;
+    background-color: #FFF487;
+}
+
+.categories a {
+    display: block;
+    text-decoration: none;
+    font-family: Cormorant Garamond;
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #778B16;
+}
+
+.categories > li:hover {
+    background-color: #778B16;
+}
+
+.categories > li:hover > a {
+    color: #FFF487;
+}
+
+.categories > li:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.categories > li:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.categories .sub-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 15px;
+}
+
+.categories > a:hover .sub-menu {
+    display: block;
+}
 
 .products {
     display: flex;
